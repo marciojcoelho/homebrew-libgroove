@@ -1,14 +1,17 @@
 require "formula"
 
 class Libgroove < Formula
+  desc "Streaming audio processing library"
   homepage "https://github.com/andrewrk/libgroove"
-  url "https://github.com/andrewrk/libgroove/archive/4.2.1.tar.gz"
-  sha1 "cdcf4109266bb5eb38d62945891d37d907c3ccd3"
+  url "https://github.com/andrewrk/libgroove/archive/4.3.0.tar.gz"
+  sha256 "76f68896f078a9613d420339ef887ca8293884ad2cd0fbc031d89a6af2993636"
+  revision 1
 
   bottle do
     cellar :any
-    revision 1
-    sha1 "bcc1b6b2f985c5f753e9074409062dc558acdecc" => :yosemite
+    sha256 "65ae845d6431bdf04c15c20b262b2a7b3b686d0baec1bffb8e1308af722bf0ae" => :el_capitan
+    sha256 "0a6e648e6ef0d01b99577144ebdc8ff283eec60111e33c779ad2ca941ee30f91" => :yosemite
+    sha256 "6034bb8923952e2b914d5649e7c2e5bb4b0eccbe3503096744d244f1866e0358" => :mavericks
   end
 
   depends_on :macos => :mavericks
